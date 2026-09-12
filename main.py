@@ -2835,18 +2835,18 @@
 #     UPDATE cars SET price = price + 100;
 #     """)
 
-    # cur.execute("UPDATE cars SET price = :Price WHERE model LIKE 'B%'", {'Price': 0})
+# cur.execute("UPDATE cars SET price = :Price WHERE model LIKE 'B%'", {'Price': 0})
 
-    # cur.executemany("INSERT INTO cars VALUES (NULL, ?, ?)", auto)
+# cur.executemany("INSERT INTO cars VALUES (NULL, ?, ?)", auto)
 
-    # for car in auto:
-    #     cur.execute("INSERT INTO cars VALUES (NULL, ?, ?)", car)
+# for car in auto:
+#     cur.execute("INSERT INTO cars VALUES (NULL, ?, ?)", car)
 
-    # cur.execute("INSERT INTO cars VALUES(1, 'Renault', 22000)")
-    # cur.execute("INSERT INTO cars VALUES(2, 'Volvo', 29000)")
-    # cur.execute("INSERT INTO cars VALUES(3, 'Mercedes', 57000)")
-    # cur.execute("INSERT INTO cars VALUES(4, 'Bentley', 35000)")
-    # cur.execute("INSERT INTO cars VALUES(5, 'Audi', 52000)")
+# cur.execute("INSERT INTO cars VALUES(1, 'Renault', 22000)")
+# cur.execute("INSERT INTO cars VALUES(2, 'Volvo', 29000)")
+# cur.execute("INSERT INTO cars VALUES(3, 'Mercedes', 57000)")
+# cur.execute("INSERT INTO cars VALUES(4, 'Bentley', 35000)")
+# cur.execute("INSERT INTO cars VALUES(5, 'Audi', 52000)")
 
 # con.commit()
 # con.close()
@@ -2909,12 +2909,12 @@
 #     for row in cur:
 #         print(row["model"], row["price"])
 
-    # row = cur.fetchone()
-    # print(row)
-    #
-    # print(cur.fetchmany(5))
+# row = cur.fetchone()
+# print(row)
+#
+# print(cur.fetchmany(5))
 
-    # print(cur.fetchall())
+# print(cur.fetchall())
 
 
 # import sqlite3
@@ -2978,4 +2978,54 @@
 
 
 # print("Вновим изменения на другом рабочем месте для того же репозитория")
-print("Рабочий процесс")
+# print("Рабочий процесс")
+
+
+import numpy as np
+
+# lst = [1, 2, 3, 4, 5]
+# print(lst ** 2)
+
+# arr = np.array(lst)
+arr = np.array([1, 2, 3, 4, 5])
+print(arr)
+
+arr2 = np.array([[1, 2, 3, 11, 12, 13], [4, 5, 6, 14, 15, 16]])
+print(arr2)
+
+# print(arr ** 2)
+# print(arr2 * 2)
+
+# количество измерений массива
+# print(arr.ndim)
+# print(arr2.ndim)
+
+# количесто строк и столбцов
+# print(arr.shape)
+# print(arr2.shape)
+
+# общее кол-во элементов
+# print(arr.size)
+# print(arr2.size)
+
+# print(arr2[0, 2])
+# print(arr2[0, :])
+# print(arr2[:, 0])
+# print(arr2[0, 1:4:2])
+# print(arr2[1, 0:-1:2])
+
+# arr2[0, 0] = 50
+# print(arr2)
+
+# arr2[0, :] = [0, 0, 0, 1, 1, 1]
+# print(arr2)
+
+zeros = np.zeros((3, 4), dtype="int32")
+print(zeros)
+
+ones = np.ones((2, 3))
+print(ones)
+
+
+# Создайте массив из 5 нулей, затем массив из 3x4 единиц.
+
