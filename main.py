@@ -1,6 +1,6 @@
 # print("Hello Python")
 # print("Привет мир")
-
+# import numpy as np
 # name = "admin"
 # print("Hello,", name, type(name), id(name))
 # age = 20.2
@@ -38,20 +38,13 @@
 # Python")
 # print('Hello \nPython')
 
-# print("\tДокумент \"script.py\" находится по заданному пути \rD:\\folder\\file\\script.py")
-
-# s1 = "Hello"
-# s2 = "World"
-# s3 = s1 + ", " + s2 + "!\t\t"   # конкатенация строк
-# print(s3 * 5)
-
-# print(6 + 2)
-# print(6 - 2)
+# print("\tДокумент \"script.py\" находится по заданному пути \rD:\\folder\\file\\script.py") print(6 + 2)
+# print(6 -
+# 2)
 # print(6 * 2)
 # print(6 / 4)
 # print(6 // 4)
-# print(6 ** 3)
-# print(7 % 2)
+# print(6 ** 3) print(7 % 2)
 
 # number = (6 + 4) * (5 ** 2 + 7)
 # print(number)  # 113
@@ -2144,13 +2137,7 @@
 # def cylinder(r, h):
 #     """
 #     Вычисляет площадь цилиндра.
-#
-#     Вычисляет площадь цилиндра на основании заданной высоты и радиуса основания
-#     :param r: положительное число, радиус основания цилиндра
-#     :param h: положительное число, высота цилиндра
-#     :return: положительное число, площадь цилиндра
-#     """
-#     return 2 * math.pi * r * (r + h)
+#      return 2 * math.pi * r * (r + h)
 #
 #
 # print(cylinder(2, 4))
@@ -2242,7 +2229,8 @@
 
 
 # s = "Я изучаю Nython. Мне нравится Nython. Nython очень интересный язык программирования"
-# print(s.replace("Nython", "Python", 2))
+# print(s.replace("Nython",
+# "Python", 2))
 
 # s = "-"
 # seq = ("a", "b", "c", "d")
@@ -2335,23 +2323,6 @@
 # f.writelines(lines)
 # f.close()
 
-# f = open("text2.txt", "w")
-# f.write("Замена строки в текстовом файле;\nизменить строку в списке;\nзаписать список в файл;\n")
-# f.close()
-#
-# f = open("text2.txt", "r")
-# read = f.readlines()
-# f.close()
-#
-# print(read)
-# read[1] = "Hello World!\n"
-# print(read)
-#
-#
-# f = open("text2.txt", "w")
-# f.writelines(read)
-# f.close()
-
 
 # f = open("text.txt", "r")
 # print(f.read(3))
@@ -2420,8 +2391,7 @@
 #
 # print(longest_words("text.txt"))
 
-# text = "Строка №1\nСтрока №2\nСтрока №3\nСтрока №4\nСтрока №5\nСтрока №6\nСтрока №7\nСтрока №8\nСтрока №9\nСтрока №10"
-#
+
 # with open("one.txt", "w") as f:
 #     f.write(text)
 
@@ -2476,36 +2446,6 @@
 # # print(data)
 #
 #
-# # def line_exchange():
-# #     text = "Замена строки в текстовом файле;\nзаписать список в файл;\nизменить строку в списке;\n"
-# #
-# #     with open(file, 'w', encoding='utf-8') as f:
-# #         f.write(text)
-# #
-# #
-# # def text2():
-# #     with open(file, 'r', encoding='utf-8') as f:
-# #         lines = f.readlines()
-# #         pos1 = int(input("pos1 = "))
-# #         pos2 = int(input("pos2 = "))
-# #         if 0 <= pos1 <= len(lines) and 0 <= pos2 <= len(lines):
-# #             lines[pos1], lines[pos2] = lines[pos2], lines[pos1]
-# #         else:
-# #             print("Такой строки нет")
-# #         print(lines)
-# #         return lines
-# #
-# #
-# # def write_text(lines):
-# #     with open(file, 'w', encoding='utf-8') as f:
-# #         f.writelines(lines)
-# #
-# #
-# # file = "text1.txt"
-# # line_exchange()
-# # a = text2()
-# # write_text(a)
-#
 # json_string = json.dumps(data, ensure_ascii=False)
 # print(json_string, type(json_string))
 #
@@ -2542,7 +2482,7 @@
 #     except FileNotFoundError:
 #         data = []
 #
-#     data.append(person_dict)  # [{"name": "...", "tel": "..."}, {"name": "...", "tel": "..."}, {"name": "...", "tel": "..."}]
+#     data.append(person_dict)
 #     with open('persons.json', 'w') as f:
 #         json.dump(data, f, indent=2)
 #
@@ -2596,94 +2536,6 @@
 #         print(f"\t{row['Имя']} - {row['Профессия']}. Родился в {row['Год рождения']} году.")
 #         count += 1
 
-# with open("data2.csv") as f:
-#     field_name = ["Имя", "Профессия", "Год рождения"]
-#     file_reader = csv.DictReader(f, delimiter=',', fieldnames=field_name)
-#     count = 0
-#     for row in file_reader:
-#         if count == 0:
-#             print(f"Файл содержит столбцы: {', '.join(row)}")
-#         print(f"\t{row['Имя']} - {row['Профессия']}. Родился в {row['Год рождения']} году.")
-#         count += 1
-
-# import csv
-
-# with open("student.csv", "w") as f:
-#     writer = csv.writer(f, delimiter=',', lineterminator='\r')
-#     writer.writerow(["Имя", "Класс", "Возраст"])
-#     writer.writerow(["Женя", 9, 15])
-#     writer.writerow(["Саша", 5, 12])
-#     writer.writerow(["Маша", 11, 18])
-
-# data = [['hostname', 'vendor', 'model', 'location'],
-#         ['sw1', 'Cisco', '3750', 'London, Best str'],
-#         ['sw2', 'Cisco', '3850', 'Liverpool, Better str'],
-#         ['sw3', 'Cisco', '3650', 'Liverpool, Better str'],
-#         ['sw4', 'Cisco', '3650', 'London, Best str']]
-#
-# with open('data_new_1.csv', 'w') as f:
-#     writer = csv.writer(f, delimiter=',', lineterminator='\r')
-#     # for row in data:
-#     #     writer.writerow(row)
-#     writer.writerows(data)
-
-# with open("student_1.csv", "w") as f:
-#     names = ["Имя", "Возраст"]
-#     file_writer = csv.DictWriter(f, delimiter=",", fieldnames=names, lineterminator="\r")
-#     file_writer.writeheader()
-#     file_writer.writerow({"Имя": "Саша", "Возраст": 6})
-#     file_writer.writerow({"Имя": "Маша", "Возраст": 15})
-#     file_writer.writerow({"Имя": "Вова", "Возраст": 14})
-
-
-# data = [{
-#     'hostname': 'sw1',
-#     'location': 'London',
-#     'model': '3750',
-#     'vendor': 'Cisco'
-# }, {
-#     'hostname': 'sw2',
-#     'location': 'Liverpool',
-#     'model': '3850',
-#     'vendor': 'Cisco'
-# }, {
-#     'hostname': 'sw3',
-#     'location': 'Liverpool',
-#     'model': '3650',
-#     'vendor': 'Cisco'
-# }, {
-#     'hostname': 'sw4',
-#     'location': 'London',
-#     'model': '3650',
-#     'vendor': 'Cisco'
-# }]
-#
-# with open("file_data.csv", 'w') as f:
-#     writer = csv.DictWriter(f, fieldnames=data[0].keys(), delimiter=",", lineterminator="\r")
-#     writer.writeheader()
-#     for row in data:
-#         writer.writerow(row)
-
-# import sqlite3
-
-
-# conn = sqlite3.connect('profile.db')
-# cur = conn.cursor()
-#
-# conn.close()
-
-# with sqlite3.connect('profile.db') as con:
-#     cur = con.cursor()
-#     # cur.execute('''CREATE TABLE IF NOT EXISTS users (
-#     #     id INTEGER PRIMARY KEY AUTOINCREMENT,
-#     #     name TEXT NOT NULL,
-#     #     summa REAL,
-#     #     date BLOB
-#     # )''')
-#     cur.execute("DROP TABLE IF EXISTS users")
-
-
-# import sqlite3
 #
 #
 # with sqlite3.connect('users.db') as con:
@@ -2981,17 +2833,18 @@
 # print("Рабочий процесс")
 
 
-import numpy as np
+# import numpy as np
+
 
 # lst = [1, 2, 3, 4, 5]
 # print(lst ** 2)
 
 # arr = np.array(lst)
-arr = np.array([1, 2, 3, 4, 5])
-print(arr)
-
-arr2 = np.array([[1, 2, 3, 11, 12, 13], [4, 5, 6, 14, 15, 16]])
-print(arr2)
+# arr = np.array([1, 2, 3, 4, 5])
+# print(arr)
+#
+# arr2 = np.array([[1, 2, 3, 11, 12, 13], [4, 5, 6, 14, 15, 16]])
+# print(arr2)
 
 # print(arr ** 2)
 # print(arr2 * 2)
@@ -3020,12 +2873,883 @@ print(arr2)
 # arr2[0, :] = [0, 0, 0, 1, 1, 1]
 # print(arr2)
 
-zeros = np.zeros((3, 4), dtype="int32")
-print(zeros)
-
-ones = np.ones((2, 3))
-print(ones)
-
+# zeros = np.zeros((3, 4), dtype="int32")
+# print(zeros)
+#
+# ones = np.ones((2, 3), dtype="int32")
+# print(ones)
 
 # Создайте массив из 5 нулей, затем массив из 3x4 единиц.
 
+# mas = np.full((2, 3), 5)
+# print(mas)
+
+# d = np.random.rand(3, 2)
+# d = np.random.randint(-5, 10, size=(3, 4))
+# print(d)
+
+# d = np.linspace(0, 10, 5)
+# d = np.arange(0, 10, 3)
+# print(d)
+
+# arr = np.arange(1, 13)
+# print(arr)
+#
+# two = np.reshape(arr, (3, 4))
+# print(two)
+
+# arr1 = np.array([1, 2, 3])
+# arr2 = np.array([4, 5, 6])
+#
+# hstack = np.hstack((arr1, arr2))
+# print(hstack)
+#
+# vstack = np.vstack((arr1, arr2))
+# print(vstack)
+
+# arr1 = np.array([1, 2, 3, 4])
+# print(arr1)
+# print(arr1 + 3)
+# print(arr1 - 2)
+# print(arr1 * 2)
+# print(arr1 ** 2)
+
+# a = np.array([[1, 2], [3, 4]])
+# b = np.array([[2, 2], [2, 2]])
+#
+# print(a + b)
+# print(a * b)
+# print(a ** b)
+
+# a = np.array([[1, 2, 3], [4, 5, 6]])
+# print(a)
+#
+# # total = a.sum()
+# # print(total)
+# #
+# # col = a.sum(axis=0)
+# # print(col)
+# #
+# # row = a.sum(axis=1)
+# # print(row)
+#
+# # mean_all = a.mean()
+# # print(mean_all)
+# #
+# # mean_0 = a.mean(axis=0)
+# # print(mean_0)
+# #
+# # mean_1 = a.mean(axis=1)
+# # print(mean_1)
+#
+# # min_all = a.min()
+# # print(min_all)
+# # min_0 = a.min(axis=0)
+# # print(min_0)
+# # max_1 = a.max(axis=1)
+# # print(max_1)
+#
+# # arg_max = a.argmax()
+# # print(arg_max)
+# #
+# # arg_0 = a.argmax(axis=0)
+# # print(arg_0)
+# #
+# # arg_1 = a.argmin(axis=1)
+# # print(arg_1)
+#
+# # prod_all = a.prod()
+# # print(prod_all)
+# #
+# # prod_0 = a.prod(axis=0)
+# # print(prod_0)
+# #
+# # prod_1 = a.prod(axis=1)
+# # print(prod_1)
+#
+# var_all = a.var()
+# print(var_all)
+#
+# var_0 = a.var(axis=0)
+# print(var_0)
+#
+# var_1 = a.var(axis=1)
+# print(var_1)
+
+# arr1 = np.array([1, 5, 20])
+# print(arr1)
+# print(np.median(arr1))
+
+# arr1 = np.array([1, 2, 4, 10])
+# arr1 = np.array([30, 40, 35, 500, 45, 32, 38, 50])
+# print(arr1)
+# print(np.median(arr1))
+
+# arr = np.array([[1, 2, 3], [2, 3, 4], [3, 4, 5], [4, 5, 6]])
+# arr = np.array([2, 4, 4, 4, 6])
+# print(arr)
+# print(np.std(arr))
+
+# salaries = np.array([50, 23, 60, 26, 19, 43, 26, 64, 60, 45, 26, 57, 54])
+# print(salaries)
+#
+# mean_salary = np.mean(salaries)
+# print(f"Средняя зарплата: {mean_salary:.2f}")
+#
+# max_salary = np.max(salaries)
+# min_salary = np.min(salaries)
+# print(f"Максимальная запрлата: {max_salary}")
+# print(f"Минимальная зарплата: {min_salary}")
+#
+# std_salary = np.std(salaries)
+# print(f"Стандартное отклонение зарплаты: {std_salary:.2f}")
+#
+# above_mean = salaries[salaries > mean_salary]
+# print(f"Зарплаты выше среднего: {above_mean}")
+
+# =======================================================================================
+# product_ids = np.array([101, 102, 103, 104, 105, 106, 107, 108, 109, 110])
+# prices = np.array([10.99, 20.99, 15.49, 25.49, 5.99, 12.99, 7.99, 30.99, 18.99, 9.99])
+# quantities = np.array([100, 50, 75, 30, 200, 120, 150, 20, 80, 110])
+# dates = np.array(["2026-07-01", "2026-07-02", "2026-07-03", "2026-07-04", "2026-07-05",
+#                   "2026-07-06", "2026-07-07", "2026-07-08", "2026-07-09", "2026-07-10"])
+#
+# total_sales = prices * quantities
+# print(f"Общий объем продаж: {total_sales}")\
+#
+# total_sum = np.sum(total_sales)
+# print(f"Сумма выручки: {total_sum}")
+#
+# average_check = np.mean(total_sales)
+# print(f"Средний чек: {average_check}")
+#
+# best_product_index = np.argmax(total_sales)
+# worst_product_index = np.argmin(total_sales)
+# print(f"Лучший товар (ID: {product_ids[best_product_index]}, объем продаж {total_sales[best_product_index]})")
+# print(f"Худший товар (ID: {product_ids[worst_product_index]}, объем продаж {total_sales[worst_product_index]})")
+# =======================================================================================
+
+# import pandas as pd
+# from pandas.core.interchange import column
+
+# # series1 = pd.Series([10, 20, 30, 40, 50])
+# series1 = pd.Series((10, 20, 30, 40, 50))
+# print(series1)
+#
+# series2 = pd.Series({"b": 10, "a": 30, "c": 20})
+# print(series2)
+#
+# # series3 = pd.Series(15)
+# series3 = pd.Series(15, index=[3, 8, 4])
+# print(series3)
+
+# age = [36, 16, 23]
+# names = ["Сергей", "Роман", "Вадим"]
+# # series4 = pd.Series(age, index=names, name="age")
+# series4 = pd.Series(age, index=names)
+# series4.name = "age"
+# print(series4)
+# # print(series4[["Роман", "Вадим"]])
+# print("Размер серии:", len(series4))
+# print("Размер серии:", series4.size)
+
+
+# series = pd.Series([5, 3, 5, 4, 2, 3, 2, 2])
+#
+# unique_value = series.unique()
+# print("Уникальные значения:", unique_value)
+#
+# value_counts = series.value_counts()
+# print("Количество значений в серии")
+# print(value_counts)
+
+
+# age = [36, 16, 23, 29]
+# names = ["Сергей", "Роман", "Вадим", "Виталий"]
+# series = pd.Series(age, index=names)
+# print(series)
+#
+# elem = series.iloc[2]
+# print("\nОдин элемент по позиции:", elem)
+#
+# subset = series.iloc[[0, 2]]
+# print("\nНесколько элементов по позиции:")
+# print(subset)
+
+# series = pd.Series([10, 20, 30, 40, 50, 60, 70, 80, 90, 100])
+# print(series)
+
+# print("Первые пять элементов:")
+# print(series.head())
+#
+# print("Первые три элемента:")
+# print(series.head(3))
+
+# print("\nПоследние 5 элементов:")
+# print(series.tail())
+#
+# print("\nПоследние 3 элемента:")
+# print(series.tail(3))
+
+# sample_data = series.sample(3)
+# print(sample_data)
+
+
+# grades = pd.Series([90, 66, 85, 85, 70], index=["Анна", "Борис", "Влад", "Дарья", "Елена"])
+# print(grades)
+#
+# # print(grades.nlargest(2, keep="first"))
+# # print(grades.nlargest(2, keep="last"))
+# # print(grades.nlargest(2, keep="all"))
+#
+# print(grades.nsmallest(3, keep="first"))
+# print(grades.nsmallest(3, keep="last"))
+# print(grades.nsmallest(3, keep="all"))
+
+# s1 = pd.Series([1, 2, 3, 4, 5])
+# s2 = pd.Series([6, 7, 8, 9, 10])
+#
+# # s3 = s1 + s2
+# # s3 = s2 - s1
+# # s3 = s2 * s1
+# # s3 = s2 / s1
+# s3 = s2 % s1
+# print(s3)
+
+# s1 = pd.Series(["a", "b", "c", "w", "r"])
+# s2 = pd.Series(["d", "e", "f"])
+#
+# s3 = s1 + s2
+# print(s3)
+
+
+# s1 = pd.Series([1, 2, 3, 4, 5])
+# s2 = s1 + 5
+# print(s2)
+
+# s = pd.Series([10, 20, 30, 40, 50])
+#
+# filtered_data = s[s >= 30]  # [30, 40, 50]
+# print(filtered_data)
+
+# s = pd.Series(["Сергей", "Роман", "Вадим", "Виталий", "Сергей", "Вадим"])
+# filtered_data = s[s == "Сергей"]
+# print(filtered_data)
+
+# s = pd.Series([1, 2, 3, 5, 8, 13, 21, 30, 55, 89])
+#
+# # filtered_data = s[(s > 8) & (s < 30)]
+# filtered_data = s[(s > 8) | (s < 30)]  # True | False
+# print(filtered_data)
+
+# s = pd.Series(["Сергей", "Роман", "Вадим", "Виталий", "Александр", "Артем"])
+# filtered_data = s[s.isin(["Роман", "Игорь", "Артем"])]
+# print(filtered_data)
+
+
+# s = pd.Series([1, 2, 3, 5, 8, 13, 21, 30, 55, 89])
+# filtered_data = s[s.between(8, 30)]
+# print(filtered_data)
+
+# s = pd.Series(['1', '2', '4'])  #, 'ошибка'
+#
+# # res = pd.to_numeric(s, errors='coerce')
+# res = s.astype(int)
+# print(res)
+
+# data = {
+#     "Name": ["Сергей", "Анна", "Роман", "Александр"],
+#     "Age": [28, 36, 23, 42],
+#     "City": ["Сочи", "Москва", "Воронеж", "Армавир"]
+# }
+#
+# # df = pd.DataFrame(data)
+# # print(df)
+# # print("*" * 30)
+# # cities = df["City"]
+# # print(cities)
+# # print("*" * 30)
+# # cities = df.City
+# # print(cities)
+# # print("*" * 30)
+# # columns = ["City", "Name"]
+# # print(df[columns])
+# # # print(df[["City", "Name"]])
+# # print("*" * 30)
+# # int_columns = df.select_dtypes(include="int64")
+# # print(int_columns)
+#
+# df = pd.DataFrame(data, index=['str_1', 'str_2', 'str_3', 'str_4'])  #
+# print(df)
+# print("*" * 30)
+# # print(df.loc[0:2])
+# # print(df.loc['str_2'])
+# # print(df.loc['str_1':'str_3'])
+# # print(df.loc[['str_1', 'str_3']])
+# # print(df.iloc[0])
+# # print("*" * 30)
+# # print(df.iloc[1:3])
+# # print("*" * 30)
+# # print(df[1:3])
+# # print(df["City"]["str_3"])
+# # print("*" * 30)
+# # print(df["City"][1:3])
+# # print("*" * 30)
+# # print(df["City"]["str_2":"str_4"])
+# # print("*" * 30)
+# # print(df["City"][["str_1", "str_3", "str_4"]])
+# # column = ["City", "Name"]
+# # print(df[column][1:3])
+# # print(df[["City", "Name"]][1:3])
+# # print(df.shape)
+# print(df.dtypes)
+
+# rows = [
+#     ["Ноутбук", 50000, 5],
+#     ["Смартфон", 30000, 10],
+#     ["Наушники", 5000, 25]
+# ]
+#
+# df_products = pd.DataFrame(rows, columns=['Товар', 'Цена', 'Количество'])
+# print(df_products)
+#
+# print("*" * 50)
+#
+# api_data = [
+#     {"ФИО": "Иванов И.И.", "Департамент": "IT"},
+#     {"ФИО": "Петров П.П.", "Департамент": "HR"},
+#     {"ФИО": "Сидоров С.С."},
+# ]
+#
+# df = pd.DataFrame(api_data)
+# print(df)
+
+
+# import numpy as np
+# import pandas as pd
+
+# data = np.array([
+#     ["Tom", 41, "Yandex"],
+#     ["Bob", 56, "VK"],
+#     ["Sam", 31, "Sberbank"],
+# ])
+#
+# columns = ["Name", "Age", "Company"]
+# df = pd.DataFrame(data, columns=columns)
+# print(df)
+
+# data = pd.read_excel("data.xlsx")
+# print(data)
+# print("*" * 30)
+# # print(data.head(3))
+# # print(data.tail(3))
+# print(data.Age.describe())
+# print("*" * 30)
+# print(data.describe())
+
+
+# df = pd.read_json("people.json")
+# print(df)
+
+# df = pd.read_csv("internet.csv")
+# print(df)
+# print("*" * 50)
+# # print(df.sort_values("mobile", ascending=False))
+# # print(df.dropna())
+#
+# new_country = {"country": "Галактика", "broadband": 1234, "mobile": 295.45}
+# df1 = pd.DataFrame([new_country])
+# print(df1)
+# print("*" * 50)
+# new_list1 = pd.concat([df1, df], ignore_index=True)
+# print(new_list1)
+# # new_list1.to_csv("new_country.csv", index=False)
+# # new_list1.to_csv("new_data.txt", index=False)
+# # new_list1.to_string("new_data1.txt", index=False)
+# print("*" * 50)
+# new_list1.drop(0, inplace=True)
+# print(new_list1)
+
+
+# df = pd.read_csv("internet.csv")
+# print(df)
+# print("*" * 50)
+# print(df[df['mobile'] > 100])
+# filtered_data = df[df['country'].str.startswith("S")]
+# print(filtered_data)
+# print(df['broadband'].agg(['mean']))
+# print("*" * 50)
+# print(df['broadband'].agg(['min', 'max', 'median']))
+# for row_label, row in df.items():
+#     print(row_label, row, sep="\n", end="\n\n")
+# print("*" * 50)
+# for row_label, row in df.iterrows():
+#     print(row_label, row, sep="\n", end="\n\n")
+# for item in df.itertuples():
+#     print(item, sep="\n", end="\n\n")
+
+# data = {
+#     "User_ID": [101, 102, 101, 103, 101],
+#     'City': ['Москва', 'Питер', 'Москва', 'Казань', 'Cочи'],
+#     'Spend': [500, 700, 500, 300, 1200]
+# }
+#
+# df = pd.DataFrame(data)
+# print(df)
+# print("*" * 40)
+# # duplicates = df.duplicated()
+# # print(duplicates)
+# # print("*" * 30)
+# # df_cleaned = df.drop_duplicates().reset_index(drop=True)
+# # print(df_cleaned)
+#
+# # df_cleaned = df.drop_duplicates(subset='User_ID', keep=False)
+# # print(df_cleaned)
+# # print("*" * 30)
+# # print(df)
+# # print("*" * 30)
+# # df.drop_duplicates(inplace=True)
+# # print(df)
+# # year = [1147, 1703, 1723, 1893, 1589]
+# # df["Year"] = year
+# # print(df)
+#
+# # new_columns = pd.DataFrame({
+# #     "Year": [1147, 1703, 1723, 1893, 1589],
+# #     "Time zone": ["GMT+3", "GMT+3", "GMT+3", "GMT+3", "GMT+3"]
+# # })
+#
+# # df = pd.concat([df, new_columns], axis=1)
+# # print(df)
+# # print("*" * 40)
+# # df.drop("Year", axis=1, inplace=True)
+# # print(df)
+# # print("*" * 40)
+# # new_row = pd.Series([104, "Воронеж", 1042], index=df.columns)
+# # df.loc[len(df)] = new_row
+# # print(df)
+# new_row = pd.DataFrame([[104, "Воронеж", 1042], [105, "Саратов", 542]], columns=df.columns)
+# df = pd.concat([df, new_row], ignore_index=True)
+# print(df)
+#
+# # df.drop(index=2, inplace=True)
+# # print("*" * 40)
+# rows = [1, 3]
+# df.drop(index=rows, inplace=True)
+# print("*" * 40)
+# print(df)
+
+# data = {"Age": [34, 37, 13, 64, 37, 47, 24, 38, 26, 41, 19, 51, 44]}
+# df = pd.DataFrame(data)
+# print(df)
+# print("*" * 50)
+# print("Среднее значение:", df["Age"].mean())
+# print("*" * 50)
+# print("Медиана:", df["Age"].median())
+# print("*" * 50)
+# print("Мода:", df["Age"].mode()[0])
+# print("*" * 50)
+# print("Расброс:", df["Age"].var(), "и стандартное отклонение:", df["Age"].std())
+# print("*" * 50)
+# print("Квантили возраста:")
+# print(df["Age"].quantile([0.25, 0.50, 0.75]))
+# print("*" * 50)
+# print("90-й процентиль возраста:", df["Age"].quantile(0.90))
+
+# import numpy as np
+# import pandas as pd
+
+# data = {
+#     "A": [1, 2, np.nan, 4, None],
+#     "B": [None, 6, 7, 8, np.nan]
+# }
+#
+# df = pd.DataFrame(data)
+# print("DataFrame до заполнения пропущенных значений:")
+# print(df)
+# print("*" * 20)
+# # missing_data = df.isna()
+# # print(missing_data)
+# # print("*" * 20)
+# # non_missing_data = df.notna()
+# # print(non_missing_data)
+# print("DataFrame после заполнения пропущенных значений:")
+# # filled_df = df.fillna(0)
+# # print(filled_df)
+# filled_df = df.copy()
+# filled_df["A"] = df["A"].fillna(df["A"].mean())
+# print(filled_df)
+# filled_df = df.copy()
+# filled_df["B"] = df["B"].fillna(df["B"].median())
+# print(filled_df)
+
+
+# data = {
+#     "City": ["Москва", "Санкт-Петербург", "Новосибирск", "Екатеринбург", "Казань", "Красноярск", "Волгоград"],
+#     "Population": [13274, None, 1637, None, 1330, 1212, None],
+#     "Time zone": ["GMT+3", "GMT+3", "GMT+7", "GMT+5", "GMT+3", None, "GMT+3"]
+# }
+#
+# df = pd.DataFrame(data)
+# print("DataFrame до заполнения пропущенных значений:")
+# print(df)
+# print("*" * 50)
+# # missing_data = df["Population"].isna()
+# # print(missing_data)
+# # print("*" * 50)
+# # missing_data = df[df["Population"].isna()]
+# # print(missing_data)
+# # print("*" * 50)
+# # missing_mask = df.isna()
+# # missing_data = df[missing_mask.any(axis=1)]
+# # print(missing_data)
+# # print("*" * 50)
+# # not_missing_mask = df.notna()
+# # non_missing_df = df[not_missing_mask.all(axis=1)]
+# # print(non_missing_df)
+# tz_mode = df["Time zone"].mode()[0]
+# print("Мода для столбца Time zone", tz_mode)
+# print("*" * 50)
+# print("DataFrame после заполнения пропущенных значений:")
+# df["Time zone"] = df["Time zone"].fillna(tz_mode)
+# print(df)
+
+# data = {
+#     'Имя': ['Анна', 'Борис', 'Влад', 'Ольга', 'Марина', 'Роман', 'Екатерина', 'Виктор', 'Ирина'],
+#     'Возраст': [25, 34, 41, 28, 19, 20, 36, 41, 38],
+#     'Город': ['Москва', 'Санкт-Петербург', 'Казань', 'Сочи', 'Санкт-Петербург', 'Москва', 'Санкт-Петербург', 'Казань', 'Сочи']
+# }
+#
+# df = pd.DataFrame(data)
+# print(df)
+# print("*" * 50)
+# print(df.groupby("Город")["Возраст"].median())
+
+# data = {
+#     "product_id": [105, 111, 102, 108, 105, 123],
+#     "category": [
+#         " Электроника ",
+#         "Одежда",
+#         " Электроника",
+#         "Обувь",
+#         " Электроника ",
+#         "Одежда "
+#
+#     ],
+#     'price': ["15 000,50", "2 500,00", "Не указана", "1 200", "15 000,50", None],
+#     'quantity': [2, np.nan, 1, 5, 2, 10]
+# }
+# df = pd.DataFrame(data)
+# print(df)
+# print("*" * 50)
+# df["category"] = df["category"].str.strip()
+# # print(df)
+# # print("*" * 50)
+# df["price"] = df["price"].str.replace(" ", "")
+# # print(df)
+# df["price"] = df["price"].str.replace(",", ".")
+# # print(df)
+# # print("*" * 50)
+# df["price"] = pd.to_numeric(df["price"], errors="coerce")
+# # print(df)
+# # print("*" * 50)
+# df["price"] = df["price"].fillna(df["price"].median())
+# # print(df)
+# # print("*" * 50)
+# df["quantity"] = df["quantity"].fillna(1)
+# # print(df)
+# # print("*" * 60)
+# df["total_revenue"] = df["quantity"] * df["price"]
+# # print(df)
+# print("*" * 60)
+# df = df.drop_duplicates().reset_index(drop=True)
+# print(df)
+
+
+# import pandas as pd
+#
+# df = pd.read_csv("platforms.csv")
+# print(df, end="\n\n")
+#
+# df["Views"] = df["Views"].fillna(df["Views"].mean())
+# df["Revenue"] = df["Revenue"].fillna(0)
+# df.drop_duplicates(inplace=True)
+# print(df, end="\n\n")
+#
+# df["Views"] = df["Views"].astype(int)
+# df["Date"] = pd.to_datetime(df["Date"])
+# print(df, end="\n\n")
+#
+# print(df.describe(), end="\n\n")
+#
+# filtered = df[df["Platform"] == "YouTube"]
+# print(filtered, end="\n\n")
+#
+# mean_views = filtered["Views"].mean()
+# mean_revenue = filtered["Revenue"].mean()
+# print(mean_views, end="\n\n")
+# print(mean_revenue, end="\n\n")
+#
+# filtered.to_csv("new_data.csv", index=False)
+
+# import numpy as np
+# import matplotlib.pyplot as plt
+
+# x = np.array([4, 5, 6, 7, 8])
+# y = np.array([1, 2, -6, 0, 4])
+# plt.plot(x, y)
+# plt.show()
+
+# x = np.array([1, 1, 5, 5, 1])
+# y = np.array([1, 5, 5, 1, 1])
+# plt.plot(x, y)
+# plt.show()
+
+# y = np.array([0, 1, 2, 3, 4])
+# x = np.array([a * a for a in y])  # [ 0  1  4  9 16]
+# plt.plot(x, y)
+# plt.grid()
+# plt.show()
+
+# plt.plot([1, 2, 3], [4, 5, 2], [1, 2, 4], [5, 3, 6])
+# plt.plot([1, 2, 3], [4, 5, 2])
+# plt.plot([1, 2, 4], [5, 3, 6])
+# plt.grid()
+# plt.show()
+
+
+# plt.plot([1, 2, 4], [4, 2, 5], ":")
+# plt.show()
+
+
+# plt.plot([1, 2, 4], [4, 2, 5], "-.", [1, 2, 3], [3, 6, 5], ":")
+# plt.plot([1, 2, 4], [4, 2, 5], "-.", color="red")
+# plt.plot([1, 2, 4], [4, 2, 5], "-.", color="#FF0000")
+# plt.plot([1, 2, 4], [4, 2, 5], "-.", color="#F00")
+# plt.plot([1, 2, 4], [4, 2, 5], "-.", c="#F00", marker="s", markerfacecolor='w', linewidth=4)
+# plt.grid()
+# plt.show()
+
+# fig, ax = plt.subplots()
+#
+# ax.plot([1, 2, 3], [4, 5, 2])
+# ax.set_title("Мой график")
+# plt.show()
+
+# days = np.array(list(range(1, 8)))  # [1 2 3 4 5 6 7]
+# temperature = [20, 22, 21, 26, 28, 23, 24]
+#
+# fig, ax = plt.subplots()
+# ax.set_xlabel('День')
+# ax.set_ylabel("Температура", fontsize=14)
+# ax.set_title("Динамика температуры за неделю", fontsize=16, fontweight='bold', color='blue', loc="right")
+#
+# ax.set_yticks([20, 22, 21, 26, 28, 23, 24])
+# ax.set_yticklabels(["20°", "22°", "21°", "26°", "28°", "23°", "24°"])
+#
+# ax.set_xticks(days)
+# ax.set_xticklabels(["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"])
+#
+# ax.tick_params(axis='x', length=7, labelsize=12)  # , rotation=90
+# ax.grid(True, which="major", axis='both', linestyle='--', linewidth=0.5, color='gray', alpha=0.7)
+#
+# ax.text(5, 28, "Макс. значение", fontsize=14, color='red', va='bottom', ha='right')  # , fontweight='bold'
+#
+# ax.plot(days, temperature, label="Температура")
+# ax.legend(loc="lower right", fontsize=12, framealpha=0.8)
+#
+# plt.show()
+
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# x = np.array([np.random.randint(0, 10) for i in range(100)])
+# y = np.array([np.random.randint(0, 10) for i in range(100)])
+#
+# plt.scatter(x, y, color='red', alpha=0.5)
+# plt.xlabel('Переменная X')
+# plt.ylabel('Переменная Y')
+# plt.title("Диаграмма рассеяния")
+#
+# plt.show()
+
+# districts = np.array([i for i in range(10) for j in range(20)])
+# # print(districts)
+# base_prices = [65, 80, 75, 35, 90, 55, 40, 110, 95, 70]
+# prices = [
+#     base_prices[d] + np.random.randint(-10, 10) for d in districts
+# ]
+# # print(prices)
+# df = pd.DataFrame({"District": districts, "Price": prices})
+#
+# mean_price = df.groupby("District")["Price"].mean()
+# cheapest_districts = mean_price.nsmallest(2).index.tolist()
+# print(f"Самые дешевые районы: {cheapest_districts}")
+#
+# cheapest_df = df[df["District"].isin(cheapest_districts)]
+# other_df = df[~df["District"].isin(cheapest_districts)]
+#
+# plt.figure(figsize=(10, 6))
+#
+# plt.scatter(
+#     other_df["District"],
+#     other_df["Price"],
+#     color="lightgray",
+#     alpha=0.7,
+#     edgecolor="black",
+#     linewidth=0.5,
+#     label="Остальные районы"
+# )
+#
+# plt.scatter(
+#     cheapest_df["District"],
+#     cheapest_df["Price"],
+#     color="red",
+#     alpha=0.9,
+#     edgecolor="black",
+#     s=70,
+#     label="2 самых дешевых района"
+# )
+#
+# plt.title("Распределение цен на квартиры по районам города", fontsize=14, fontweight="bold")
+#
+# plt.xlabel("Номер района", fontsize=12)
+# plt.ylabel("Цена квартиры (млн руб.)", fontsize=12)
+# plt.grid(axis="y", linestyle="--", alpha=0.5)
+# plt.legend()
+#
+# plt.show()
+
+
+# age_data = [np.random.randint(18, 55) for i in range(25)]
+# print(age_data)
+#
+# plt.hist(age_data, bins=5, edgecolor='black', color='orange')
+#
+# plt.title('Возраст зрителей в кинотеатре')
+# plt.xlabel("Возраст (лет)")
+# plt.ylabel("Количество человек")
+#
+# plt.show()
+
+# import random
+#
+# delivery_times = [random.gauss(35.0, 7.0) for i in range(1000)]
+#
+# plt.figure(figsize=(9, 5))
+# plt.hist(
+#     delivery_times,
+#     bins=20,
+#     color="#3498db",
+#     edgecolor="white",
+#     alpha=0.8
+# )
+#
+# plt.axvline(x=40, color="red", linestyle="--", linewidth=2, label="Стандарт компании (40 минут)")
+#
+#
+# plt.title("Анализ времени доставки пиццы (1000 заказов)", fontsize=14, fontweight="bold")
+# plt.xlabel("Время доставки (минуты)", fontsize=12)
+# plt.ylabel("Количество заказов", fontsize=12)
+# plt.grid(axis="y", linestyle=":", alpha=0.6)
+# plt.legend(loc="upper left")
+# plt.legend()
+# plt.show()
+
+
+# categories = ["Пицца", "Бургеры", "Суши", "Салаты", "Напитки"]
+# sales = [120, 85, 95, 40, 150]
+#
+# plt.figure(figsize=(8, 5))
+# plt.bar(categories, sales, color="#1f77ff", edgecolor="#0000BB", width=0.6)
+#
+# plt.title("Продажа блюд в кафе за день", fontsize=14, fontweight="bold")
+# plt.xlabel("Категории меню", fontsize=12)
+# plt.ylabel("Количество проданных порций", fontsize=12)
+#
+# plt.grid(axis='y', linestyle='--', alpha=0.5)
+#
+# plt.show()
+
+# languages = ['Python', 'JavaScript', 'Java', 'C#', 'C++', 'Go', 'PHP']
+# project_count = [45, 38, 29, 22, 15, 12, 8]
+#
+# colors = ['purple' if i == 0 else '#b0bec5' for i in range(len(languages))]
+# # print(colors)
+#
+# plt.figure(figsize = (9, 6))
+#
+# bars = plt.bar(languages, project_count, color=colors)
+#
+# plt.title('Использование языков программирования в компании', fontsize=14, fontweight='bold')
+# plt.xlabel("Языки программироания", fontsize=12, labelpad=25)
+# plt.ylabel("Количество активных проектов", fontsize=12, labelpad=25)
+#
+# plt.ylim(0, max(project_count) + 5)
+#
+# plt.grid(axis='y', linestyle='--', alpha=0.5)
+# plt.gca().spines['top'].set_visible(False)
+# plt.gca().spines['right'].set_visible(False)
+# plt.tight_layout()
+#
+# plt.show()
+
+
+# days = [1, 2, 3, 4, 5]
+#
+# works = [5, 4, 6, 5, 4]
+# rest = [3, 4, 2, 3, 4]
+# sleep = [5, 7, 10, 9, 8]
+#
+# plt.stackplot(days, works, rest, sleep, labels=['Работа', 'Отдых', 'Сон'], colors=['#4466ee', '#00bbff', '#ff9988'])
+#
+# plt.title("Распределение времени за 5 дней")
+# plt.xlabel("Дни")
+# plt.ylabel("Часы")
+# plt.legend()
+# plt.grid(alpha=0.3)
+# plt.show()
+
+# mouths = pd.date_range(start='2026-01-01', end='2026-12-31', freq='MS')
+# print(mouths)
+#
+# laptops = [5500, 5800, 3000, 3500, 3500, 3800, 6100, 6500, 6600, 6600, 6800, 5000]
+# smartphones = [2500, 1600, 2700, 1800, 2900, 5000, 5100, 5500, 5300, 5600, 5500, 5600]
+# tablets = [1000, 1500, 1600, 1600, 1800, 5000, 5500, 5600, 5600, 5800, 3000, 3500]
+#
+# df = pd.DataFrame({"Month": mouths.strftime("%b %Y"), "Laptops": laptops, "Smartphones": smartphones, "Tablets": tablets})
+#
+# plt.figure(figsize=(12, 6))
+#
+# plt.stackplot(df['Month'], df['Laptops'], df['Smartphones'], df['Tablets'], labels=['Ноутбуки', 'Смартфоны', 'Планшеты'])
+#
+# plt.title("Общие ежемесячные продажи за год")
+# plt.xlabel("Месяц")
+# plt.ylabel("Общие продажи")
+# plt.grid()
+#
+# plt.legend()
+# plt.show()
+
+# labels = ["Еда", "Транспорт", "Жилье", "Развлечения"]
+# sizes = [30, 20, 40, 10]
+#
+# plt.pie(sizes, labels=labels, autopct='%1.1f%%', colors=['red', 'green', 'blue', 'yellow'])  #
+#
+# plt.title("Круговая диаграмма")
+#
+# plt.show()
+
+
+sizes = [35, 25, 25, 15]
+labels = ['Python', 'JavaScript', 'C++', 'Java']
+colors = ['#ff9999', '#66bbff', '#99ff99', '#ffcc99']
+explode = (0.1, 0, 0, 0)
+
+plt.pie(sizes, labels=labels, colors=colors, autopct='%1.1f%%', explode=explode, shadow=True, startangle=100)  #
+plt.axis('equal')
+
+plt.title("Популярность языков программирования")
+plt.show()

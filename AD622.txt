@@ -445,5 +445,34 @@ git pull
 	
 	
 NumPy
+Pandas
+	- Series: одномерный массив с метками (индексы)
+	- DataFrame: двумерная структура данных
 
 pip install numpy
+pip install pandas
+
+NaN
+
+& - and
+| - or
+
+
+data.xlsx
+people.json
+
+pip install openpyxl
+
+
+pip install matplotlib
+
+major grid
+minor grid
+
+Alt + 0176
+
+	  upper
+left  center right
+	  lower
+	  
+best (значение по умолчанию)
