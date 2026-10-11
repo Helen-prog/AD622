@@ -476,3 +476,34 @@ left  center right
 	  lower
 	  
 best (значение по умолчанию)
+
+Scatter Plot (Диаграмма рассеяния)
+Hist (Гистограмма)
+Bar (Столбчатые диаграммы)
+Stackplot (Диаграмма с областями или штабелированный график)
+Pie (Круговая диаграмма)
+Boxplot (Диаграмма размаха) (Ящик с усами)
+Plotsurface (3D-график)
+Imshow (Тепловая карта)
+
+Seaborn
+Plotly
+Dash (Plotly Dash)
+
+pip install seaborn
+pip install plotly
+pip install kaleido
+pip install dash
+pip install dash-ag-grid
+
+
+http://127.0.0.1:54689/
+file:///E:/AD622/temperature.html
+
+dash_one.py
+dash_two.py
+
+python dash_one.py
+
+Ctrl + C - остановить сервер
+
