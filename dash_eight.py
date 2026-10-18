@@ -87,20 +87,36 @@ def update_dashboard(selected_category):
 
     fig_line = px.line(
         filtered_df,
-        x="Дата",
-        y="Продажи",
-        color="Категории",
+        x='Дата',
+        y='Продажи',
+        color='Категория',
         markers=True,
-        title="Динамика продаж по месяцам"
+        title='Динамика продаж по месяцам',
     )
 
-    for fig in [fig_line]:
+    fig_bar = px.bar(
+        filtered_df,
+        x='Дата',
+        y='Продажи',
+        color='Категория',
+        barmode='group',
+        title='Количество заказов',
+    )
+
+    fig_pie = px.pie(
+        filtered_df,
+        names="Категория",
+        values="Продажи",
+        title="Структура продаж по категориям"
+    )
+
+    for fig in [fig_line, fig_bar, fig_pie]:
         fig.update_layout(
-            margin={"r": 0, "t": 0, "l": 0, "b": 0},
-            lrgend = {"orientation": "h", "y": -0.2},
+            margin={"r": 20, "t": 40, "l": 20, "b": 20},
+            legend={"orientation": "h", "y": -0.2},
         )
 
-    return fig_line
+    return fig_line, fig_bar, fig_pie
 
 
 if __name__ == '__main__':

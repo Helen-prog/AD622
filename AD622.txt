@@ -502,8 +502,15 @@ file:///E:/AD622/temperature.html
 
 dash_one.py
 dash_two.py
+dash_three.py
+dash_four.py
+dash_five.py
+dash_six.py
+dash_seven.py
+dash_eight.py
 
-python dash_one.py
+python dash_three.py
+python dash_tree.py
 
 Ctrl + C - остановить сервер
 
